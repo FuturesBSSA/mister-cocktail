@@ -28,6 +28,12 @@ ruby '2.3.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 
+#Lewagon stylesheets
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
+gem 'autoprefixer-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
