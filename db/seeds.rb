@@ -13,5 +13,8 @@ puts "creating ingredients"
 Ingredient.create!(name: "lemon")
 Ingredient.create!(name: "ice")
 Ingredient.create!(name: "mint leaves")
+Ingredient.create!(name: "strawberry")
+Ingredient.create!(name: "cola")
+Ingredient.create!(name: "wodka")
 
 puts "ingredients created"
