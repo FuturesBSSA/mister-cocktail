@@ -28,6 +28,9 @@ ruby '2.3.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 
+#
+gem 'figaro'
+
 #Lewagon stylesheets
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
