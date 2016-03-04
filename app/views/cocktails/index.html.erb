@@ -1,17 +1,36 @@
+
 <div class="banner text-center" style=" background-image: url('http://vinepair.com/wp-content/uploads/2015/06/fake-cocktail-bar-liqueurs.jpg');">
-  <h1>Brew your Awesomo Cocktails</h1>
-  <%= link_to 'Add', new_cocktail_path, class: "btn btn-primary"  %>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <h1>Brew your Awesomo Cocktails</h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+
+        <%= link_to 'Try it now', new_cocktail_path, class: "btn btn-success"  %>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="padded">
   <div class="container">
-    <% @cocktails.each do |cocktail| %>
-    <li><%= cocktail.name %>
-      <%= link_to 'show', cocktail_path(cocktail), class: 'btn btn-primary' %>
-      <%= link_to 'Edit', edit_cocktail_path(cocktail), class: "btn btn-primary" %>
-      <%= link_to "Delete", cocktail_path(cocktail), class: "btn btn-danger",
-      method: :delete,
-      data: { confirm: "Are you sure?" } %></li>
-      <% end %>
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+
+        <% @cocktails.each do |cocktail| %>
+        <div class="list">
+          <li>
+            <p><%= link_to cocktail.name, cocktail_path(cocktail) %>
+              <%= link_to 'Edit', edit_cocktail_path(cocktail), class: "btn btn-primary" %>
+              <%= link_to "Delete", cocktail_path(cocktail), class: "btn btn-danger",
+              method: :delete,
+              data: { confirm: "Are you sure?" } %></p>
+            </li>
+          </div>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>

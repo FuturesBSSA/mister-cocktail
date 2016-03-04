@@ -28,8 +28,12 @@ ruby '2.3.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 
-#
+# prepare for cloudinary
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave'
+gem "attachinary"
+gem "jquery-fileupload-rails"
 
 #Lewagon stylesheets
 gem 'bootstrap-sass'

@@ -16,5 +16,6 @@ Ingredient.create!(name: "mint leaves")
 Ingredient.create!(name: "strawberry")
 Ingredient.create!(name: "cola")
 Ingredient.create!(name: "wodka")
+Ingredient.create!(name: "milk")
 
 puts "ingredients created"
